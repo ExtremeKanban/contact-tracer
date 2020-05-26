@@ -6,5 +6,5 @@
 .gitlab-ci.yml
 drawings/
 images/
-READ.ME
+README.MD
 */database.php
