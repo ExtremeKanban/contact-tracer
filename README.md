@@ -9,6 +9,8 @@ This is a thought project to attempt to build a COVID (or any transmissible dise
    - Delete any stored data as soon as possible
 3. Send as little information as possible
    - Only share anonymous ids and date/time
+4. Follow CDC contact tracing guidelines
+   - [https://www.cdc.gov/coronavirus/2019-ncov/php/principles-contact-tracing.html](https://www.cdc.gov/coronavirus/2019-ncov/php/principles-contact-tracing.html)
 
 
 
