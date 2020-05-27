@@ -1,4 +1,4 @@
-# example: POST /api/contact/register-infection.php
+# example: POST /api/contact/register-infection/
 # Body: JSON
 # {
 #    "uuids" : ["00000000-0000-0000-0000-000000000000", "00112233-4455-6677-8899-aabbccddeeff"],
