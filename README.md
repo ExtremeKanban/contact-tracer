@@ -20,6 +20,7 @@ Some problems with the mobile phone based applications are:
 1. Anonymous
    - Do not share person identifiable information
    - Do not share location identifiable information
+   - Do not expose devices to a larger network (phone, computer, etc.) without direct intervention by the user of the device.
 2. Limited Retention
    - Delete any stored data as soon as possible
 3. Send as little information as possible
@@ -52,3 +53,9 @@ Some problems with the mobile phone based applications are:
 
 ![Search Contact](/images/search-contact.png)
 > Each person can check the published lists of UUIDs to see if any of their IDs show up.  If found, they can either go to a healthcare provider for testing, self-quarantine, or do nothing at all.  The ultimate intention is to allow the person who may have been in contact to use the information as they see fit and know that no one else knows they were personally potentially exposed.
+
+
+## How
+Using BBC micro:bit devices.  These devices are easy for prototyping which should get this system in a live testing phase quickly.  They are also inexpensive (US $15 - $20) and can be ordered from several distributors around the world.
+
+The challenges of the devices are that they cannot generate UUIDs. They do have unique-ish hardware ids, but allowing for randomized ids requires user intervention and make the use slightly more complicated to give better anonymity.  The devices also do not have a builtin clock, so tracking the dates where contacts were recorded also involves human interaction.  If the user doesn't keep track of when the device recorded a contact, they won't be able to accurately publish that interaction as having been in the infectious window.
