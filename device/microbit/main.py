@@ -51,9 +51,20 @@ def saveFoundID(foundid):
         print("Received: {0}".format(foundid))
     return True
 
+def pauseBroadcast():
+    display.show(pauseImage, delay=800, wait=False, loop=True)
+    while True:
+        print("Pausing broadcast")
+        sleep(1000)
+        if button_a.was_pressed():
+            break
+    display.show(heart_beat, delay=800, wait=False, loop=True)
+    return True
+
 # setup
 display.show(Image.SKULL)
 heart_beat = [Image.HEART, Image.HEART_SMALL]
+pauseImage = [Image.NO, Image("00000:00000:00000:00000:00000")]
 readList = []
 uuid = getUUID()
 startupData = getFileContents("data.txt")
@@ -68,6 +79,9 @@ while True:  # main loop
     display.show(heart_beat, delay=800, wait=False, loop=True)
 
     while True: # inner loop
+        if button_a.was_pressed():
+            pauseBroadcast()
+
         radio.send(uuid)
         print("Sent: {0}".format(uuid))
 
